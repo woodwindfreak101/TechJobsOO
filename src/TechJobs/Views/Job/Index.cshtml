@@ -1,9 +1,27 @@
 ﻿@{
 // TODO #2.1- declare the ViewModel (outside of this @{ } block)
 }
-
+@model TechJobs.Models.Job
 <table class="job-listing">
     @{ 
 // TODO #2.2 - display the job fields, one per row (outside of this @{ } block)
     }
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Core Competency</th>
+            <th>Employer</th>
+            <th>Location</th>
+            <th>Position Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Name</td>
+            <td>@Model.CoreCompetency</td>
+            <td>@Model.Employer</td>
+            <td>@Model.Location</td>
+            <td>@Model.PositionType</td>
+        </tr>
+    </tbody>
 </table>
